@@ -1,0 +1,76 @@
+#main{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 50%;
+    font-size: 500%;
+    text-align: center;
+}
+.mainRows {
+    
+    display: flex;
+    width: 50%;
+
+}
+
+#frfc {
+    border-right: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#frsc {
+    width: 33%;
+    height: 100px;
+
+}
+
+#frtc {
+    border-left: 2px solid black;
+    width: 33%;
+    height: 100px;
+    
+}
+
+#srfc {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#srsc {
+    border-top: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#srtc {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#trfc {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#trsc {
+    border-top: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+#trtc {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    width: 33%;
+    height: 100px;
+}
+
+.disabledBox{
+    pointer-events: none;
+}
