@@ -59,7 +59,7 @@
     }
 
     #main {
-        margin-top: 50%;
+        margin-top: 70%;
         margin-left: 7%;
         font-size: 50px;
         font-family: 'Judson';
@@ -79,6 +79,7 @@
         border-radius: 25px;
         border-width: 0px;
         color: white;
+        padding-left: 15px;
     }
 
     button {

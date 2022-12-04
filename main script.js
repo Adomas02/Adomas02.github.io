@@ -69,7 +69,14 @@ function removeClick() {
     })
 }
 function addRemButt() {
-    document.getElementById("main").style.height="1100px";
+    var x = window.matchMedia("(max-width: 1000px)")
+    if( x.matches){
+        document.getElementById("main").style.height="1100px";
+    }
+    else{
+        document.getElementById("main").style.height="650px";
+    }
+    
     var remacthButt = document.createElement("button");
     remacthButt.setAttribute("id", "remButton");
     document.getElementById('buttBox').appendChild(remacthButt);
