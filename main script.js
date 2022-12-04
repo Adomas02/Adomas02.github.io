@@ -69,6 +69,7 @@ function removeClick() {
     })
 }
 function addRemButt() {
+    document.getElementById("main").style.height="1100px";
     var remacthButt = document.createElement("button");
     remacthButt.setAttribute("id", "remButton");
     document.getElementById('buttBox').appendChild(remacthButt);
@@ -79,10 +80,11 @@ function addRemButt() {
 
 }
 function isWin() {
+    var winColor="#F87D7D";
     for (i = 0; i < 7; i += 3) {
         if (boxArr[i].innerHTML == boxArr[i + 1].innerHTML && boxArr[i + 1].innerHTML == boxArr[i + 2].innerHTML && boxArr[i].innerHTML != "") {
             for (j = i; j < i + 3; j++) {
-                boxArr[j].style.color = "red";
+                boxArr[j].style.color = winColor;
             }
             return true;
         }
@@ -90,20 +92,20 @@ function isWin() {
     for (i = 0; i < 3; i++) {
         if (boxArr[i].innerHTML == boxArr[i + 3].innerHTML && boxArr[i + 3].innerHTML == boxArr[i + 6].innerHTML && boxArr[i].innerHTML != "") {
             for (j = i; j < i + 7; j += 3) {
-                boxArr[j].style.color = "red";
+                boxArr[j].style.color = winColor;
             }
             return true;
         }
     }
     if (boxArr[0].innerHTML == boxArr[4].innerHTML && boxArr[4].innerHTML == boxArr[8].innerHTML && boxArr[0].innerHTML != "") {
         for (i = 0; i < 9; i += 4) {
-            boxArr[i].style.color = "red";
+            boxArr[i].style.color = winColor;
         }
         return true;
     }
     if (boxArr[2].innerHTML == boxArr[4].innerHTML && boxArr[4].innerHTML == boxArr[6].innerHTML && boxArr[2].innerHTML != "") {
         for (i = 2; i < 7; i += 2) {
-            boxArr[i].style.color = "red";
+            boxArr[i].style.color = winColor;
         }
         return true;
     }
